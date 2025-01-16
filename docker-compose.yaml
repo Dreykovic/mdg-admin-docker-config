@@ -8,7 +8,7 @@ services:
                 BACKEND_REPO_URL: ${BACKEND_REPO_URL}
         ports:
             - "2999:3000"
-        command: bash -c "npm run pri:dev:reset && npm run  pri:seed && npm run start:prod"
+        command: bash -c "npm run start:prod"
         env_file:
           - ./server/.env
 
