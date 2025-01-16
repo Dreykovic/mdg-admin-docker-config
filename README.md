@@ -80,12 +80,12 @@ Once the environment variables are set, you can build and launch the application
 
 1. Build the application:
    ```bash
-   docker-compose build
+   docker compose build
    ```
 
 2. Launch the application:
    ```bash
-   docker-compose up --build
+   docker compose up --build
    ```
 
 This will build and start all the services defined in the `docker-compose.yaml` file.
