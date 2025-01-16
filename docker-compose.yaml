@@ -1,0 +1,28 @@
+services:
+    server:
+        container_name: server
+        build:
+            context: ./server
+            dockerfile: Dockerfile
+            args:
+                BACKEND_REPO_URL: ${BACKEND_REPO_URL}
+        ports:
+            - "2999:3000"
+        command: bash -c "npm run pri:dev:reset && npm run  pri:seed && npm run start:prod"
+        env_file:
+          - ./server/.env
+
+    client:
+        container_name: client
+        build:
+            context: ./client
+            dockerfile: Dockerfile
+            args:
+                FRONTEND_REPO_URL: ${FRONTEND_REPO_URL}
+        command: bash -c "npm run preview"
+        env_file:
+          - ./client/.env
+        ports:
+            - "4172:4173"
+        depends_on:
+            - server

@@ -1,0 +1,16 @@
+.
+├── arch.txt
+├── client
+│   ├── Dockerfile
+│   ├── .env
+│   └── .env.client.example
+├── docker-compose.yaml
+├── .env
+├── .gitignore
+├── README.md
+└── server
+    ├── Dockerfile
+    ├── .env
+    └── .env.server.example
+
+3 directories, 11 files
