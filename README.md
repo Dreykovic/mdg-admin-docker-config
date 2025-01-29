@@ -92,6 +92,10 @@ Once the environment variables are set, you can build and launch the application
 
 This will build and start all the services defined in the `docker-compose.yaml` file.
 
+4. Stop Containers instances
+   ```bash
+   docker compose down
+   ```
 ---
 
 ### Additional Notes
