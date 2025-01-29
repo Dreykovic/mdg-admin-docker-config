@@ -85,7 +85,7 @@ Once the environment variables are set, you can build and launch the application
 
 2. Launch the application:
    ```bash
-   docker compose up
+   docker compose up -d
    ```
 
 3. Open your browser and reach the localhost:4172 address to use the application
