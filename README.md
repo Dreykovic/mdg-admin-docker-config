@@ -80,13 +80,15 @@ Once the environment variables are set, you can build and launch the application
 
 1. Build the application:
    ```bash
-   docker compose build
+   docker compose build --no-cache
    ```
 
 2. Launch the application:
    ```bash
-   docker compose up --build
+   docker compose up
    ```
+
+3. Open your browser and reach the localhost:4172 address to use the application
 
 This will build and start all the services defined in the `docker-compose.yaml` file.
 
